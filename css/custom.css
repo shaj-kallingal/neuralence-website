@@ -64,7 +64,7 @@
 	--primary-color		: #15161B;
 	--secondary-color	: #F7F8FD;
 	--text-color		: #4e525a !important;
- --accent-color: linear-gradient(90deg, #6C63FF, #9A6AFF);
+--accent-color: linear-gradient(140deg, #0C93FF 50%, #B153F0 97.74%);
  	--white-color		: #FFFFFF;
 	--divider-color		: #E1E4EB;
 	--error-color		: rgb(230, 87, 87);
@@ -208,10 +208,12 @@ body{
 	font-weight: 700;
 	line-height: 1.1em;
 	color: var(--white-color);
-	background: var(--accent-color);
+	/* gradient border using background-clip trick */
+  background: linear-gradient(#00000000, #00000000) padding-box,
+              var(--accent-color) border-box;
 	text-transform: capitalize;
 	padding: 15px 45px 15px 20px;
-	border: 2px solid #9A6AFF;
+border: 2px solid transparent;
 	border-radius: 100px;
 	transition: 0.3s ease-in-out;
 	position: relative;
@@ -2416,9 +2418,16 @@ header.main-header .header-sticky.active{
 	transition: all 0.3s ease-in-out;
 }
 
-.faq-accordion .accordion-button:not(.collapsed){
-   background-color: var(--accent-color);
-   color: var(--white-color);
+.faq-accordion .accordion-button:not(.collapsed) {
+    background-color: #ffffff !important;
+    border-radius: 15px !important;
+
+    /* Gradient text */
+    background: linear-gradient(140deg, #0C93FF 50%, #B153F0 97.74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: 700;
 }
 
 .accordion-header .accordion-button.collapsed{
@@ -2443,6 +2452,11 @@ header.main-header .header-sticky.active{
 .accordion-header .accordion-button.collapsed::after{
 	transform: rotate(-180deg) translate(30px, 50%);
 	color: var(--accent-color);
+}
+
+/* ✅ Arrow icon visible with gradient text */
+.faq-accordion .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) saturate(100%); /* makes arrow dark */
 }
 
 .accordion-body{
