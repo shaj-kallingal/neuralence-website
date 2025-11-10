@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    // Dynamically build the full redirect URL based on current domain + port
+    const domain = window.location.origin; // e.g. http://localhost:5503 or https://yourdomain.com
+    window.location.href = `${domain}/solutions.html`;
+  </script>
+</head>
+<body>
+  <p>Redirecting to <a id="redirect-link">Services Page</a>...</p>
+  <script>
+    // Update link text dynamically as well
+    const domains = window.location.origin;
+    document.getElementById("redirect-link").href = `${domains}/solutions.html`;
+  </script>
+</body>
+</html>
