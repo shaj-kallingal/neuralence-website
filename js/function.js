@@ -233,6 +233,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const footer = document.querySelector(".main-footer");
+  if (footer) {
+    fetch("/includes/footer.html")
+      .then(response => response.text())
+      .then(data => {
+        footer.outerHTML = data;
+      })
+      .catch(error => console.error("Footer load failed:", error));
+  }
+});
+
 
 	function submitForm(){
 		/* Initiate Variables With Form Content*/
