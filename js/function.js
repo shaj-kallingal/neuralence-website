@@ -222,13 +222,19 @@ document.addEventListener('DOMContentLoaded', function() {
       currentPath.endsWith(href) ||
       currentPath.includes(`/${hrefName}/`);
 
-    if (isActive) {
-      link.style.color = '#5987ed';
-      link.style.fontWeight = '600';
-    } else {
-      link.style.color = '';
-      link.style.fontWeight = '';
-    }
+   if (isActive) {
+  link.style.background = 'linear-gradient(140deg, #0C93FF 50%, #B153F0 97.74%)';
+  link.style.webkitBackgroundClip = 'text';
+  link.style.webkitTextFillColor = 'transparent';
+  link.style.fontWeight = '600';
+} else {
+  link.style.background = '';
+  link.style.webkitBackgroundClip = '';
+  link.style.webkitTextFillColor = '';
+  link.style.fontWeight = '';
+  link.style.color = ''; link.style.fontWeight = '';
+}
+
   });
 });
 
