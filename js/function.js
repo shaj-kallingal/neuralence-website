@@ -157,6 +157,27 @@
 	
 	if ($('.text-anime-style-3').length) {		
 		let	animatedTextElements = document.querySelectorAll('.text-anime-style-3');
+		const faqsSection = document.querySelector('.service-faqs');
+  if (faqsSection) {
+    faqsSection.innerHTML = faqsSection.innerHTML.replace(/\bFrequently asked question(?!s)\b/gi, 'Frequently asked questions');
+  }
+
+  // Select all service items
+  document.querySelectorAll('.service-item').forEach(item => {
+    const link = item.querySelector('a[href]');
+    if (link) {
+      const url = link.getAttribute('href');
+      
+      // Make entire div clickable
+      item.style.cursor = 'pointer';
+      item.addEventListener('click', (e) => {
+        // Prevent double navigation if arrow is clicked
+        if (!e.target.closest('a')) {
+          window.location.href = url;
+        }
+      });
+    }
+  });
 		
 		 animatedTextElements.forEach((element) => {
 			//Reset if needed
