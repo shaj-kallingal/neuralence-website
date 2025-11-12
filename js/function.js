@@ -238,6 +238,29 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  // === Update description ===
+  const descElement = document.querySelector('.ask-question-content p');
+  if (descElement) {
+    descElement.textContent = "Feel free to contact our sales team anytime — we’ll be happy to assist you with your project or partnership queries.";
+  }
+
+  // === Update phone ===
+  const phoneAnchor = [...document.querySelectorAll('.ask-contact-list a')]
+    .find(a => a.textContent.includes('Phone:'));
+  if (phoneAnchor) {
+    phoneAnchor.innerHTML = `<span>Phone:</span> (+971) 52 313 2916`;
+    phoneAnchor.href = 'tel:+971523132916';
+  }
+
+  // === Update email ===
+  const emailAnchor = [...document.querySelectorAll('.ask-contact-list a')]
+    .find(a => a.textContent.includes('Email:'));
+  if (emailAnchor) {
+    emailAnchor.innerHTML = `<span>Email:</span> sales@neuralence.ai`;
+    emailAnchor.href = 'mailto:sales@neuralence.ai';
+  }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     // Create modal HTML and insert into body
