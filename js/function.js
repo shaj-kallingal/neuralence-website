@@ -168,7 +168,7 @@
   
 
   // Run safely across the page
-  walk(document.body);
+
 
 
   // Select all service items
