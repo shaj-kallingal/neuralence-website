@@ -372,7 +372,9 @@ function openModal() {
   const timestamp = new Date().getTime();
 
   // Detect if current page URL includes '/services/'
-  const isInServices = window.location.pathname.includes('/services/');
+const isInServices =
+  window.location.pathname.includes('/services/') ||
+  window.location.pathname.includes('/solutions/');
 
   // Set correct relative path based on current folder
   const basePath = isInServices ? '../' : './';
