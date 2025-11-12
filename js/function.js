@@ -157,9 +157,12 @@
 	
 	if ($('.text-anime-style-3').length) {		
 		let	animatedTextElements = document.querySelectorAll('.text-anime-style-3');
-		const faqsSection = document.querySelector('.service-faqs');
+		 const faqsSection = document.querySelector('.service-faqs');
   if (faqsSection) {
-    faqsSection.innerHTML = faqsSection.innerHTML.replace(/\bFrequently asked question(?!s)\b/gi, 'Frequently asked questions');
+    faqsSection.innerHTML = faqsSection.innerHTML.replace(
+      /\bFrequently\s+asked\s+question(?!s)\b/gi,
+      'Frequently <br> asked questions'
+    );
   }
 
   // Select all service items
