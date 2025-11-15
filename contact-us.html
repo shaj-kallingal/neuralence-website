@@ -329,7 +329,7 @@ United Arab Emirates
 									</div>
 
 									<div class="form-group col-md-12 mb-4">
-										<input type="text" name="subject" class="form-control" id="subject" placeholder="subjects" required >
+										<input type="text" name="subject" class="form-control" id="subject" placeholder="subject" required >
 										<div class="help-block with-errors"></div>
 									</div>
 
@@ -467,39 +467,54 @@ United Arab Emirates
     <!-- Footer End -->
 
     <script>
-        document.getElementById("contactForm").addEventListener("submit", function (e) {
-          e.preventDefault();
-        
-          const form = e.target;
-          const formData = {
-            fname: form.fname.value,
-            lname: form.lname.value,
-            phone: form.phone.value,
-            email: form.email.value,
-            subject: form.subject.value,
-            msg: form.msg.value
-          };
-        
-          fetch("https://script.google.com/macros/s/AKfycbzQd8BM2Am9PjChZbR8Z-MMF6cBP1l2snEVqhqkLRW0QJbi2DdtJwVowCbiC2-6hfpnIQ/exec", {
-            method: "POST",
-            body: JSON.stringify(formData)
-          })
-            .then(response => response.text())
-            .then(data => {
-                console.log(data)
-              if (data === "Success") {
-                alert("Message sent successfully!");
-                form.reset();
-              } else {
-                console.log(data)
-                alert("Error: " + data.message);
-              }
-            })
-            .catch(error => {
-              alert("Request failed: " + error);
-            });
-        });
-        </script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+
+  const payload = {
+    formId: "3f8fe8d7-e5f1-433e-a9e3-119ea66de5eb",
+    formData: {
+      name: form.fname.value + " " + form.lname.value,
+      phone: form.phone.value,
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.msg.value
+    },
+    thanksMessage: "Your form has been submitted successfully. We'll get back to you soon."
+  };
+
+  fetch("https://api.ozole.in/public/forms/submit", {
+    method: "POST",
+    mode: "cors",
+    credentials: "omit", // important: prevents preflight blocking
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "*/*",
+      "Origin": "https://flerri.ozole.in",   // extra safety (browser may override)
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-site"
+    },
+    body: JSON.stringify(payload)
+  })
+    .then(res => res.json().catch(() => res.text()))
+    .then(data => {
+      console.log("Response:", data);
+
+      if (data.success === true || data.status === "success") {
+        alert("Message sent successfully!");
+        form.reset();
+      } else {
+        alert("Error: " + (data.message || "Something went wrong."));
+      }
+    })
+    .catch(err => {
+      console.error("Request Failed:", err);
+      alert("Request failed: " + err);
+    });
+});
+</script>
+
         
 
     <!-- Jquery Library File -->

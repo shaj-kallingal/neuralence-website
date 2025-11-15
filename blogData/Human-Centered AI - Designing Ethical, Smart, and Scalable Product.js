@@ -5,7 +5,7 @@ export const blogPost = {
     readTime: "5 min read",
     avatar: "images/authors/amalkiran-p-profile-pic.webp",
     title: "Human-Centered AI: Designing Ethical, Smart, and Scalable Products",
-    description: "Learn how human-centered AI prioritizes empathy, ethics, and scalability to create trustworthy, impactful products. Discover tools and strategies from Neuralence Digital."
+    description: "Learn how human-centered AI prioritizes empathy, ethics, and scalability to create trustworthy, impactful products. Discover tools and strategies from Neuralence Solutions."
   },
 
   sidebar: {
@@ -178,7 +178,7 @@ export const blogPost = {
       type: "text",
       heading: "Ready to Build AI That Truly Connects?",
       paragraphs: [
-        "At Neuralence Digital, we design intelligent systems that understand, respect, and serve real human needs. Whether launching your first AI-powered tool or refining a mature platform, our strategists, designers, and engineers embed empathy, ethics, and scalability from the start. Contact us at Neuralence.com to schedule a discovery call and co-create the future of AI."
+        "At Neuralence Solutions, we design intelligent systems that understand, respect, and serve real human needs. Whether launching your first AI-powered tool or refining a mature platform, our strategists, designers, and engineers embed empathy, ethics, and scalability from the start. Contact us at Neuralence.com to schedule a discovery call and co-create the future of AI."
       ]
     },
     {

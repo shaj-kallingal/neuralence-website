@@ -148,7 +148,7 @@ export const blogPost = {
       type: "text",
       heading: "Start Measuring Your UX Today",
       paragraphs: [
-        "At Neuralence Digital, we specialize in designing experiences that are not just beautiful, but measurable. From UX strategy to performance optimization, we help you connect the dots between user behavior and business outcomes. Ready to turn UX into ROI? Book a free UX consultation today at Neuralence’s website."
+        "At Neuralence Solutions, we specialize in designing experiences that are not just beautiful, but measurable. From UX strategy to performance optimization, we help you connect the dots between user behavior and business outcomes. Ready to turn UX into ROI? Book a free UX consultation today at Neuralence’s website."
       ]
     },
     {

@@ -131,7 +131,7 @@ export const blogPost = {
       type: "text",
       heading: "Start Building Smarter Products Today",
       paragraphs: [
-        "At Neuralence Digital, we help teams combine design thinking with data-driven insights to create products that win. Ready to transform your product strategy? Book a free consultation today at Neuralence’s website and discover how to build smarter, more impactful products."
+        "At Neuralence Solutions, we help teams combine design thinking with data-driven insights to create products that win. Ready to transform your product strategy? Book a free consultation today at Neuralence’s website and discover how to build smarter, more impactful products."
       ]
     },
     {

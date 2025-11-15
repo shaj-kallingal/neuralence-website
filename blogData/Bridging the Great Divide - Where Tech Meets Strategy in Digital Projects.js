@@ -117,7 +117,7 @@ export const blogPost = {
       type: "text",
       heading: "Real-World Example: How Neuralence SolutionsDoes It",
       paragraphs: [
-        "At Neuralence Digital, we ditch silos from day one. Our cross-functional teams understand your business model, explore user needs, choose scalable tech, and architect for long-term growth."
+        "At Neuralence Solutions, we ditch silos from day one. Our cross-functional teams understand your business model, explore user needs, choose scalable tech, and architect for long-term growth."
       ]
     },
     {
@@ -151,7 +151,7 @@ export const blogPost = {
     },
     {
       type: "text",
-      heading: "Partner With Neuralence Digital",
+      heading: "Partner With Neuralence Solutions",
       paragraphs: [
         "Looking to bring harmony to your next digital product? Let Neuralence Solutionshelp you design with strategy and build with purpose. Book a free consultation today at Neuralence’s website and let’s create something extraordinary together."
       ]

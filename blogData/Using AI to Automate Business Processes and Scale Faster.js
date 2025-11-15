@@ -94,9 +94,9 @@ export const blogPost = {
     },
     {
       type: "text",
-      heading: "Neuralence Digital: Your Partner in AI Transformation",
+      heading: "Neuralence Solutions: Your Partner in AI Transformation",
       paragraphs: [
-        "At Neuralence Digital, we don’t just build software. We create intelligent ecosystems that blend smart UI/UX design, AI capabilities, and scalable automation. Our expertise includes:"
+        "At Neuralence Solutions, we don’t just build software. We create intelligent ecosystems that blend smart UI/UX design, AI capabilities, and scalable automation. Our expertise includes:"
       ]
     },
     {
@@ -187,7 +187,7 @@ export const blogPost = {
         { text: "Identify repetitive, manual tasks within your organization." },
         { text: "Prioritize tasks that are measurable and scalable." },
         { text: "Choose AI tools that align with your business goals." },
-        { text: "Collaborate with a trusted partner like Neuralence Digital." },
+        { text: "Collaborate with a trusted partner like Neuralence Solutions." },
         { text: "Monitor performance and optimize using real-time feedback." }
       ]
     },

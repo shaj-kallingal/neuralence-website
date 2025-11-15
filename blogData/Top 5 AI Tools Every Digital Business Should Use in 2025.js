@@ -212,7 +212,7 @@ export const blogPost = {
       type: "text",
       heading: "Start Your AI Journey Today",
       paragraphs: [
-        "At Neuralence Digital, we specialize in helping businesses adopt AI tools to transform their operations. Ready to boost your digital business with AI? Book a free consultation today at Neuralence’s website and discover how these tools can drive your growth."
+        "At Neuralence Solutions, we specialize in helping businesses adopt AI tools to transform their operations. Ready to boost your digital business with AI? Book a free consultation today at Neuralence’s website and discover how these tools can drive your growth."
       ]
     },
     {

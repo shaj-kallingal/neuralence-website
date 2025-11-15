@@ -5,7 +5,7 @@ export const blogPost = {
     readTime: "4 min read",
     avatar: "images/authors/amalkiran-p-profile-pic.webp",
     title: "The Role of KPIs in Driving Design and Product Decisions: A Practical Guide for Business Growth",
-    description: "Discover how key performance indicators (KPIs) help teams make smarter design and product decisions. Learn to align UX efforts with business goals for measurable growth. A guide by Neuralence Digital."
+    description: "Discover how key performance indicators (KPIs) help teams make smarter design and product decisions. Learn to align UX efforts with business goals for measurable growth. A guide by Neuralence Solutions."
   },
 
   sidebar: {
@@ -21,7 +21,7 @@ export const blogPost = {
       type: "intro",
       paragraphs: [
         "In today’s digital-first economy, successful businesses don’t rely on luck or assumptions. They rely on data. Specifically, they rely on KPIs—Key Performance Indicators—to understand what’s working, what isn’t, and where to go next.",
-        "Gone are the days when UI/UX decisions were based solely on creativity or stakeholder opinion. Now, design must deliver impact, not just impression. At Neuralence Digital, we believe that data-backed design decisions are the cornerstone of sustainable product growth."
+        "Gone are the days when UI/UX decisions were based solely on creativity or stakeholder opinion. Now, design must deliver impact, not just impression. At Neuralence Solutions, we believe that data-backed design decisions are the cornerstone of sustainable product growth."
       ]
     },
     {
@@ -184,9 +184,9 @@ export const blogPost = {
     },
     {
       type: "text",
-      heading: "Partner With Neuralence Digital",
+      heading: "Partner With Neuralence Solutions",
       paragraphs: [
-        "At Neuralence Digital, we integrate strategy, design, and analytics to help brands grow through better product decisions. Whether you’re launching a new app or optimizing an existing platform, we bring KPI-driven clarity to every UX challenge.",
+        "At Neuralence Solutions, we integrate strategy, design, and analytics to help brands grow through better product decisions. Whether you’re launching a new app or optimizing an existing platform, we bring KPI-driven clarity to every UX challenge.",
         "Ready to make your product data-smart? Book a consultation with our team today at Neuralence’s website."
       ]
     },

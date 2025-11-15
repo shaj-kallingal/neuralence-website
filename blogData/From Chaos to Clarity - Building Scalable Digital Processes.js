@@ -130,7 +130,7 @@ export const blogPost = {
       type: "text",
       heading: "Tools to Support Scalable Processes",
       paragraphs: [
-        "At Neuralence Digital, we recommend tools that streamline operations and scale with your business:"
+        "At Neuralence Solutions, we recommend tools that streamline operations and scale with your business:"
       ]
     },
     {
@@ -153,9 +153,9 @@ export const blogPost = {
     },
     {
       type: "text",
-      heading: "Scale Smarter With Neuralence Digital",
+      heading: "Scale Smarter With Neuralence Solutions",
       paragraphs: [
-        "At Neuralence Digital, we help businesses build scalable digital processes that drive efficiency and growth. Ready to transform your operations? Book a free consultation today at Neuralence’s website.",
+        "At Neuralence Solutions, we help businesses build scalable digital processes that drive efficiency and growth. Ready to transform your operations? Book a free consultation today at Neuralence’s website.",
       ]
     },
     {

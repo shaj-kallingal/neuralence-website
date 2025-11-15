@@ -5,7 +5,7 @@ export const blogPost = {
     readTime: "4 min read",
     avatar: "images/authors/amalkiran-p-profile-pic.webp",
     title: "Why a Design System Is Crucial for Business Consistency and Scalable Product Development",
-    description: "Discover why a design system is essential for business success. Learn how it enhances brand consistency, speeds up product development, and aligns design and engineering teams. Brought to you by Neuralence Digital."
+    description: "Discover why a design system is essential for business success. Learn how it enhances brand consistency, speeds up product development, and aligns design and engineering teams. Brought to you by Neuralence Solutions."
   },
 
   sidebar: {
@@ -21,7 +21,7 @@ export const blogPost = {
       type: "intro",
       paragraphs: [
         "In today’s hyper-competitive digital world, the ability to deliver consistent, high-quality user experiences at scale has become a defining factor for business success. Whether you're launching a new product, scaling features, or aligning multiple teams, one foundational solution consistently proves its value: the design system.",
-        "At Neuralence Digital, we don’t just see design systems as collections of UI components. We treat them as scalable infrastructure that powers visual consistency, accelerates product delivery, and bridges the gap between design and code."
+        "At Neuralence Solutions, we don’t just see design systems as collections of UI components. We treat them as scalable infrastructure that powers visual consistency, accelerates product delivery, and bridges the gap between design and code."
       ]
     },
     {
@@ -142,7 +142,7 @@ export const blogPost = {
       type: "text",
       heading: "Neuralence’s Design System Services",
       paragraphs: [
-        "At Neuralence Digital, we architect digital ecosystems tailored to your business goals, whether you’re a startup launching an MVP, a scaling SaaS, or an enterprise unifying brand identity. Our services include:"
+        "At Neuralence Solutions, we architect digital ecosystems tailored to your business goals, whether you’re a startup launching an MVP, a scaling SaaS, or an enterprise unifying brand identity. Our services include:"
       ]
     },
     {
@@ -199,9 +199,9 @@ export const blogPost = {
     },
     {
       type: "text",
-      heading: "Partner With Neuralence Digital",
+      heading: "Partner With Neuralence Solutions",
       paragraphs: [
-        "At Neuralence Digital, we specialize in building robust design systems that blend creativity with scalability. Ready to unify your product experience? Book a free consultation today at Neuralence’s website."
+        "At Neuralence Solutions, we specialize in building robust design systems that blend creativity with scalability. Ready to unify your product experience? Book a free consultation today at Neuralence’s website."
       ]
     },
     {
